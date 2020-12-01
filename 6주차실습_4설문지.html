@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>소프트웨어 설문지</title>
+    <style>
+
+        *{
+            padding:0;
+            margin:0;
+        }
+
+        li {
+            list-style: none;
+            margin: 15px 5px;
+        }
+
+
+        h1{
+            text-align: center;
+        }
+
+        header#header {
+            background: rgb(255, 255, 88);
+
+            padding: 10px;
+            height : 70px;
+
+        }
+
+        footer#footer{
+            position: relative;
+            background: rgb(173, 123, 173);
+            margin : 0px;
+            padding: 10px;
+            height : 70px;
+        }
+
+        form {
+            background-color: pink;
+            margin: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1>설문지</h1>
+            <h4>소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</h4>
+        </header>
+
+        <form>
+            <li>
+                <span>학년</span>
+                <input type="radio" name="grade" value="1" checked> 1학년
+                <input type="radio" name="grade" value="2"> 2학년
+                <input type="radio" name="grade" value="3"> 3학년
+                <input type="radio" name="grade" value="4"> 4학년
+            </li>
+            <li>
+                <span>성별</span>
+                <input type="radio" name="sex" value="1"> 남
+                <input type="radio" name="sex" value="2" checked> 여
+            </li>
+            <li>
+                <span>관심분야</span>
+                <select name="area">
+                    <option value="1">모바일 소프트웨어</option>
+                </select>
+            </li>
+            <li>
+                <span>진로(다중 선택)</span>
+                <input type="checkbox" value="1" checked>개발
+                <input type="checkbox" value="2">기획
+                <input type="checkbox" value="3">영업
+                <input type="checkbox" value="4">창업
+            </li>
+            <li>
+                <span>남기고 싶은 말</span>
+
+                <textarea cols="50" rows="10" placeholder="글을 남겨주세요"></textarea>
+            </li>
+        </form>
+        <footer id="footer">
+            <div class="copyright">Copyright 2020 by Daun</div>
+        </footer>
+    </div>
+</body>
+
+</html>

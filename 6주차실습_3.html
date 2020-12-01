@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>animation</title>
+        <style>
+            div#peng{
+                animation-name: rotate_image; /*애니메이션 이름*/
+                animation-duration: 1s; /*1초에한번씩*/
+                animation-iteration-count: infinite; /*무한반복한다*/
+                
+            }
+
+            @keyframes rotate_image {
+                from {
+                    transform: rotate(0deg); /*0도~359도까지 회전*/
+                }
+                to{
+                    transform: rotate(359deg);
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <h3>어지러워요</h3>
+        <hr>
+        <ul>
+            <div id="peng">
+                <img src="https://pds.joins.com/news/component/htmlphoto_mmdata/201910/26/ce877ed2-0800-457f-b9a6-a86044718d40.jpg"
+                width = "200" height="200">
+
+            </div>
+        </ul>
+    </body>
+</html>

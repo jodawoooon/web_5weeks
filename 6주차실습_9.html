@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gradient Menu</title>
+    <style>
+
+        table {
+            margin: 0 auto;
+
+            border-collapse: collapse;
+        }
+
+        #first{
+            border-top-left-radius: 1em;/* 왼쪽 상단 코너를 부드럽게 */ 
+            border-bottom-left-radius: 1em;/* 왼쪽 하단 코너를 부드럽게 */ 
+
+        }
+
+        #last{
+            border-top-right-radius: 1em; /*오른쪽 상단 코너를 부드럽게 */ 
+            border-bottom-right-radius: 1em;/* 오른쪽 하단 코너를 부드럽게 */
+        }
+
+        td {
+            
+            height: 30px;
+            width: 200px;
+            padding: 10px;
+            box-shadow :0 0 3px black;
+            text-align: center;
+        }
+
+        
+        td:hover{
+            color:white;
+            background-color: black;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+        <table>
+            <tbody>
+                <tr>
+                    <td id="first">Home</td><td>HTML5</td><td>CSS3</td><td id="last">JQuery</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+
+</html>
